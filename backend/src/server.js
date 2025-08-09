@@ -1,11 +1,10 @@
 import express from "express";
-import cors from "cors";
 import dotenv from "dotenv";
-import path from "path";
-
-import notesRoutes from "./routes/notesRoutes.js";
+import cors from "cors";
 import { connectDB } from "./config/db.js";
-import rateLimiter from "./middleware/rateLimiter.js";
+import rateLimiter from "./middleware/ratelimiter.js";
+import notesRoutes from "./routes/notesRoutes.js";
+import path from "path";
 
 dotenv.config();
 
